@@ -38,7 +38,7 @@ function letterPrompt() {
 		//	Every time your guessed letter is in the word, and NOT in the used words array, we get one step closer to completing.
 		for (i = 0; i < word.length; i++) {
 			if (guess == word.letters[i].value && usedLetters.indexOf(guess) == -1) {
-				word.letters[i].display = word.letters[i].value;
+				word.letters[i].show();
 				kount++;
 			}
 		}
